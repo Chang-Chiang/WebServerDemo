@@ -21,6 +21,7 @@ Simple Demo of Web Server
 + [Install](#install)
 + [Usage](#usage)
 + [Docs](#docs)
++ [Todo](#todo)
 + [License](#license)
 
 ## Background
@@ -119,6 +120,15 @@ $ git clone https://github.com/Chang-Chiang/WebServerDemo.git
   ```bash
   [ip]:[port]
   ```
+
+## Todo
+
+项目目前已知问题，待后续修改：
+
++ 程序可能出错点使用了 `assert`，后续全部修改为 `return`
++ 加锁部分，死锁问题，以及使用 RAII 优化
++ 使用智能指针优化 `new[]` `delete[]`
++ 修改为 one loop one thread 
 
 ## Docs
 
